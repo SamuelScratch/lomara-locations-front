@@ -28,7 +28,7 @@ footer > * {
         font-size: 0.85rem;
         flex-direction: column;
     }
-    ul {
-        text-align: left;
+    div {
+        text-align: right;
     }
 }

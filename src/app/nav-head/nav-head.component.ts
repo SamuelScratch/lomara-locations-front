@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-nav-head',
@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrl: './nav-head.component.css'
 })
 export class NavHeadComponent {
+  @Input()
+  affiche! : boolean
+  innerWidth! : number
 
+  ngOnInit() {
+    this.innerWidth = window.innerWidth;
+  }
+  
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.innerWidth = window.innerWidth;
+  }
 }
