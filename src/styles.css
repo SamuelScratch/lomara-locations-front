@@ -84,8 +84,7 @@ app-root {
     flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-    font-family: 'Nunito';
+    font-family: 'Comfortaa' !important;
     background-color: var(--body-background);
     color: var(--bright);
 }
