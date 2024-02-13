@@ -7,6 +7,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NavItemComponent } from './nav-item/nav-item.component';
 import { NavHeadComponent } from './nav-head/nav-head.component';
 import { FooterComponent } from './footer/footer.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { ProprietairesComponent } from './proprietaires/proprietaires.component';
+import { VoyageursComponent } from './voyageurs/voyageurs.component';
+import { BienCarteComponent } from './bien-carte/bien-carte.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     NavItemComponent,
     NavHeadComponent,
-    FooterComponent
+    FooterComponent,
+    AccueilComponent,
+    ProprietairesComponent,
+    VoyageursComponent,
+    BienCarteComponent
   ],
   imports: [
     BrowserModule,

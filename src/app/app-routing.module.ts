@@ -4,11 +4,15 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavHeadComponent } from './nav-head/nav-head.component';
 import { NavItemComponent } from './nav-item/nav-item.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { ProprietairesComponent } from './proprietaires/proprietaires.component';
+import { VoyageursComponent } from './voyageurs/voyageurs.component';
 
 const routes: Routes = [
-  { path: 'accueil', component:  FooterComponent},
-  { path: 'proprietaires', component:  NavbarComponent},
-  { path: 'voyageurs', component:  NavHeadComponent},
+  { path: '', component:  AccueilComponent},
+  { path: 'accueil', component:  AccueilComponent},
+  { path: 'proprietaires', component:  ProprietairesComponent},
+  { path: 'voyageurs', component:  VoyageursComponent},
   { path: 'devis', component:  FooterComponent},
 ];
 

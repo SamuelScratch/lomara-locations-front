@@ -5,8 +5,8 @@
     </div>
     <div class="nav-items" *ngIf="(affiche && innerWidth < 801 ) || innerWidth > 800">
         <app-nav-item class="nav-item" nomLien="Accueil" routerLink="/accueil" (click)="innerWidth < 801 ? affiche = !affiche : false"></app-nav-item>
-        <app-nav-item class="nav-item" nomLien="Propriétaires" routerLink="/proprietaires" (click)="innerWidth < 801 ? affiche = !affiche : false"></app-nav-item>
         <app-nav-item class="nav-item" nomLien="Voyageurs" routerLink="/voyageurs" (click)="innerWidth < 801 ? affiche = !affiche : false"></app-nav-item>
+        <app-nav-item class="nav-item" nomLien="Propriétaires" routerLink="/proprietaires" (click)="innerWidth < 801 ? affiche = !affiche : false"></app-nav-item>
         <app-nav-item class="nav-item" nomLien="Devis" routerLink="/devis" (click)="innerWidth < 801 ? affiche = !affiche : false"></app-nav-item>
     </div>
 </nav> 
