@@ -11,6 +11,8 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ProprietairesComponent } from './proprietaires/proprietaires.component';
 import { VoyageursComponent } from './voyageurs/voyageurs.component';
 import { BienCarteComponent } from './bien-carte/bien-carte.component';
+import { DevisComponent } from './devis/devis.component';
+import { FichepackComponent } from './fichepack/fichepack.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { BienCarteComponent } from './bien-carte/bien-carte.component';
     AccueilComponent,
     ProprietairesComponent,
     VoyageursComponent,
-    BienCarteComponent
+    BienCarteComponent,
+    DevisComponent,
+    FichepackComponent
   ],
   imports: [
     BrowserModule,

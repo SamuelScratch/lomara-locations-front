@@ -1,9 +1,8 @@
 nav {
     padding: 0px 20%;
-    background-color: var(--body-background);
-    color: var(--dark);
+    background-color: var(--dark);
+    color: var(--body-background);
     display: flex;
-    border-bottom: inset 2px var(--ultra-dark);
 }
 nav > * {
     margin: auto;
@@ -13,6 +12,7 @@ nav * {
 }
 .nav-items {
     display: flex;
+    cursor: pointer;
 }
 .nav-item {
     padding: 0px 14px;
@@ -51,14 +51,14 @@ span {
     .nav-head {
         padding: 14px 14px;
         margin: 0;
-        border-bottom: solid 2px var(--ultra-dark);
     }
     .nav-items { 
         flex-direction: column;
         width: 100%;
+        border-bottom: solid 2px var(--ultra-dark);
     }
     .nav-item {
-        background-color: var(--clear);
+        background-color: var(--body-background);
         color: var(--ultra-dark);
         padding: 10px 0;
         padding-left: 30px;
@@ -66,6 +66,7 @@ span {
         display: flex;
     }
     .nav-item:hover {
-        background-color: var(--body-background);
+        background-color: var(--medium);
+        color: var(--body-background);
     }
 }

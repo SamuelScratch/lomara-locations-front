@@ -1,7 +1,21 @@
 div {
-    cursor: pointer;
-    font-size: 1.15rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 400;
     display: flex;
-    font-family: 'Tsukimi Rounded';
+    font-family: 'Merriweather Sans';
+}
+
+/* TABLET */
+
+@media only screen and (max-width: 1200px) {
+    
+}
+
+/* PHONES */
+
+@media only screen and (max-width: 800px) { 
+    
+    div {
+        text-align: right;
+    }
 }

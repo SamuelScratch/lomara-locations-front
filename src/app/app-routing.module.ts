@@ -7,13 +7,14 @@ import { NavItemComponent } from './nav-item/nav-item.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ProprietairesComponent } from './proprietaires/proprietaires.component';
 import { VoyageursComponent } from './voyageurs/voyageurs.component';
+import { DevisComponent } from './devis/devis.component';
 
 const routes: Routes = [
-  { path: '', component:  AccueilComponent},
-  { path: 'accueil', component:  AccueilComponent},
   { path: 'proprietaires', component:  ProprietairesComponent},
   { path: 'voyageurs', component:  VoyageursComponent},
-  { path: 'devis', component:  FooterComponent},
+  { path: 'devis', component:  DevisComponent},
+  { path: 'accueil', component:  AccueilComponent},
+  { path: '**', redirectTo: 'accueil', pathMatch: 'full'},
 ];
 
 @NgModule({
