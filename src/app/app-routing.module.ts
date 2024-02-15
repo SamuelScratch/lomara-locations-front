@@ -12,7 +12,7 @@ import { DevisComponent } from './devis/devis.component';
 const routes: Routes = [
   { path: 'proprietaires', component:  ProprietairesComponent},
   { path: 'voyageurs', component:  VoyageursComponent},
-  { path: 'devis', component:  DevisComponent},
+  { path: 'contact', component:  DevisComponent},
   { path: 'accueil', component:  AccueilComponent},
   { path: '**', redirectTo: 'accueil', pathMatch: 'full'},
 ];

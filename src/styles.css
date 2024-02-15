@@ -64,14 +64,28 @@ input[type="submit"], button {
 
 /***************/
 :root {
-    --body-background: #dbe7f1;
-    --ultra-dark: #0e1e33;
-    --dark: #16425B;
-    --dark-medium: #2F6690;
-    --medium: #3A7CA5;
-    --clear: #9db1cf;
+    --body-background: #f5f2e7;
+    --body-background-2: #faf5f0;
+    --navbar : #1d7cca;
+    /*--ultra-dark: #09192e;
+    --dark: #0a2f58;
+    --dark-medium: #1e4d94;
+    --medium: #5588cc;
+    --clear: #abbdd8;*/
+    --black: #091122;
+    --ultra-dark: #09192e;
+    --dark: #0a2f58;
+    --dark-medium: #0D47A1;
+    --medium: #1976D2;
+    --clear: #90CAF9;
     --alternative-color: #F3CA40;
+    --alternative-color-2: #ffee02;
 }
+
+@font-face {
+    font-family: 'AdlerySwash';
+    src: url('./assets/Adlery-Swash-trial.ttf');
+  }
 
 html {
     scroll-behavior: smooth;
@@ -99,8 +113,18 @@ main {
 article {
     width: 1200px;
     margin: 50px auto;
+    margin-bottom: 0;
     text-align: justify;
 }
+
+span.lomara {
+    font-family: 'AdlerySwash';
+    font-size: larger;
+}
+span.lomara::before, span.lomara::after{
+    content: "\00a0";
+}
+
 /* TABLET */
 
 @media only screen and (max-width: 1200px) {
@@ -113,6 +137,6 @@ article {
 
 @media only screen and (max-width: 800px) { 
     article {
-        width: 80%;
+        width: 100%;
     }
 }

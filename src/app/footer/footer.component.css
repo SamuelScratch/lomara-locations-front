@@ -1,5 +1,6 @@
 footer {
     background-color: var(--ultra-dark);
+    background: linear-gradient(90deg, var(--ultra-dark) 0%, var(--black) 100%);
     color: var(--clear);
     padding: 30px 20%;
     display: flex;
@@ -11,6 +12,12 @@ ul {
 }
 footer > * {
     margin: auto 0;
+    flex: 1 1 0px;
+}
+.material-icons, .material-symbols-outlined {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--alternative-color);
 }
 
 /* TABLET */
@@ -27,9 +34,12 @@ footer > * {
     footer {
         padding: 20px;
         font-size: 0.85rem;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
-    div {
+    .material-icons, .material-symbols-outlined {
         text-align: right;
+    }
+    ul {
+        text-align: left;
     }
 }
