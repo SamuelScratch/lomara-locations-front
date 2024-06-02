@@ -126,4 +126,7 @@ section li.inclus {
         width: auto;
         border-radius: 0;
     }
+    section:hover {
+        transform: none;
+    }
 }

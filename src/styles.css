@@ -102,6 +102,7 @@ app-root {
     font-weight: 200;
     background-color: var(--body-background);
     color: var(--bright);
+    overflow: unset;
 }
 main {
     flex-grow: 1;

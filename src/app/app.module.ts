@@ -13,6 +13,7 @@ import { VoyageursComponent } from './voyageurs/voyageurs.component';
 import { BienCarteComponent } from './bien-carte/bien-carte.component';
 import { DevisComponent } from './devis/devis.component';
 import { FichepackComponent } from './fichepack/fichepack.component';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,11 +31,10 @@ import { FichepackComponent } from './fichepack/fichepack.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
-  providers: [
-    provideClientHydration()
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
