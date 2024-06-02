@@ -7,7 +7,13 @@
 </header>
 
 <article>
-    <div class="carte-bien" *ngFor="let bien of biens">
-        {{bien.nom}}
+    <div class="biens">
+        <div class="carte-bien" *ngFor="let bien of biens">
+            <img src="" alt="IMAGE BIEN" class="bien-image">
+            <div class="bien-nom">
+                {{bien.nom}}
+            </div>
+        </div>
     </div>
+
 </article>

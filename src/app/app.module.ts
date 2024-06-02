@@ -14,6 +14,7 @@ import { BienCarteComponent } from './bien-carte/bien-carte.component';
 import { DevisComponent } from './devis/devis.component';
 import { FichepackComponent } from './fichepack/fichepack.component';
 import { HttpClientModule} from '@angular/common/http';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HttpClientModule} from '@angular/common/http';
     VoyageursComponent,
     BienCarteComponent,
     DevisComponent,
-    FichepackComponent
+    FichepackComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

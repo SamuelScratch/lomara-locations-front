@@ -8,9 +8,11 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ProprietairesComponent } from './proprietaires/proprietaires.component';
 import { VoyageursComponent } from './voyageurs/voyageurs.component';
 import { DevisComponent } from './devis/devis.component';
+import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
   { path: 'proprietaires', component:  ProprietairesComponent},
+  { path: 'admin', component:  AdminComponent},
   { path: 'voyageurs', component:  VoyageursComponent},
   { path: 'contact', component:  DevisComponent},
   { path: 'accueil', component:  AccueilComponent},
