@@ -9,7 +9,7 @@
 <article>
     <div class="biens">
         <div class="carte-bien" *ngFor="let bien of biens">
-            <img src="" alt="IMAGE BIEN" class="bien-image">
+            <img src={{bien.vignette}} alt="IMAGE BIEN" class="bien-image">
             <div class="bien-nom">
                 {{bien.nom}}
             </div>

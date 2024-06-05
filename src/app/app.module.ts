@@ -15,6 +15,7 @@ import { DevisComponent } from './devis/devis.component';
 import { FichepackComponent } from './fichepack/fichepack.component';
 import { HttpClientModule} from '@angular/common/http';
 import { AdminComponent } from './admin/admin.component';
+import { BienComponent } from './bien/bien.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AdminComponent } from './admin/admin.component';
     BienCarteComponent,
     DevisComponent,
     FichepackComponent,
-    AdminComponent
+    AdminComponent,
+    BienComponent
   ],
   imports: [
     BrowserModule,

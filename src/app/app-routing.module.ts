@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'proprietaires', component:  ProprietairesComponent},
   { path: 'admin', component:  AdminComponent},
   { path: 'voyageurs', component:  VoyageursComponent},
+  { path: 'voyageurs/:id', component:  VoyageursComponent},
   { path: 'contact', component:  DevisComponent},
   { path: 'accueil', component:  AccueilComponent},
   { path: '**', redirectTo: 'accueil', pathMatch: 'full'},
