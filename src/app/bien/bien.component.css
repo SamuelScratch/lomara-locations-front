@@ -1,0 +1,146 @@
+header {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 49;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 0px 1px 3px rgb(0 0 0 / 25%);
+    color: whitesmoke;
+}
+
+header>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    backdrop-filter: blur(5px);
+}
+
+header>div>div {
+    margin: auto;
+}
+
+header h1 {
+    font-weight: 100;
+    font-size: 4em;
+    margin: 0;
+    font-family: 'Merriweather Sans';
+}
+h2 {
+    text-align: center;
+    font-family: 'Merienda';
+    padding: 20px;
+    backdrop-filter: blur(5px);
+}
+h3 {
+    text-align: center;
+    font-family: 'Merienda';
+    font-size: 1.25rem;
+    font-weight: bold;
+    backdrop-filter: blur(5px);
+    margin-bottom: 10px;
+}
+article {
+    width: 800px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bien-head {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.15);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.description {
+    display: flex;
+    gap: 20px;
+}
+.equipement {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.15);
+    color: black;
+    padding:  20px;
+}
+.bien-image {
+    max-width: 200px;
+}
+.description-vignette-tarif {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+.description-texte{
+    padding:  20px;
+}
+.description-tarif {
+    padding: 10px;
+}
+.description > div {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.15);
+    color: black;
+    display: flex;
+}
+.description img {
+    margin: 0 auto;
+    width: 100%;
+}
+.bien-images {
+    column-count: 3;
+    column-gap: 5px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+.bien-images img {
+    width: 100%;
+}
+.bien-equipements {
+    column-count: 3;
+}
+.bien-equipements > li{
+    text-align: center;
+}
+
+/* TABLET */
+
+@media only screen and (max-width: 1200px) {
+    article {
+        width: 700px;
+    }
+}
+
+/* PHONES */
+
+@media only screen and (max-width: 800px) { 
+    article {
+        width: 95%;
+    }
+    .bien-images {
+        column-count: 2;
+        column-gap: 5px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .description {
+        flex-direction: column;
+    }
+    .description img {
+        margin: 0 auto;
+        max-width:  200px;
+    }
+}

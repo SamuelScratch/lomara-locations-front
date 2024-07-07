@@ -9,10 +9,11 @@ import { Bien } from '../bien';
   styleUrl: './voyageurs.component.css'
 })
 export class VoyageursComponent implements OnInit {
-  
+
   isLoaded:boolean = false;
   biens : Bien[] = [];
 
+  
   constructor(private bienService : BienService, public router : Router) { }
 
   ngOnInit(): void {

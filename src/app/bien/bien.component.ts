@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { BienService } from '../bien.service';
 import { Bien } from '../bien';
 
@@ -14,10 +14,13 @@ export class BienComponent {
   bien : Bien= new Bien();
   id : number = 0;
 
-  constructor(private bienService : BienService, public router : Router) { }
+  constructor(private bienService : BienService, public router : ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.bienService.getBien(this.id).subscribe(
+
+    const bienId = parseInt(this.router.snapshot.paramMap.get('id')!);
+
+    this.bienService.getBien(bienId).subscribe(
       response => {
         this.bien = response;
         this.isLoaded = true;

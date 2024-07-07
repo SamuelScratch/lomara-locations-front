@@ -1,2 +1,33 @@
-<p>bien works!</p>
-{{bien.nom}}
+<header style="background-image: url('/assets/tourisme (1).jpeg');">
+    <div>
+        <div>
+            <h1>Voyageurs</h1>
+        </div>
+    </div>
+</header>
+
+<article>
+    <div class="bien-head" style="background-image: url('/assets/fond_paysage.jpeg');">
+        <h2>{{bien.nom}}</h2>
+    </div>
+    <div class="description" style="white-space: pre-line">
+        <div class="description-texte">
+            {{bien.description}}
+        </div>
+        <div class="description-vignette-tarif">
+            <img src={{bien.vignette}} alt="IMAGE BIEN" class="bien-image">
+            <div class="description-tarif">
+                {{bien.texte_tarif}}
+            </div>
+        </div>
+    </div>
+    <div class="bien-images">
+        <img *ngFor="let image of bien.images" src={{image.data_image}} alt="IMAGE BIEN">
+    </div>
+    <div class="equipement">
+        <h3>Equipements :</h3>
+        <ul class="bien-equipements">
+            <li *ngFor="let equipement of bien.equipements">{{equipement.nom}}</li>
+        </ul>
+    </div>
+</article>

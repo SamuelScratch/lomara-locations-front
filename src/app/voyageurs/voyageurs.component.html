@@ -8,10 +8,19 @@
 
 <article>
     <div class="biens">
-        <div class="carte-bien" *ngFor="let bien of biens">
+        <div class="carte-bien" *ngFor="let bien of biens"  routerLink="/bien/{{bien.id}}">
             <img src={{bien.vignette}} alt="IMAGE BIEN" class="bien-image">
-            <div class="bien-nom">
-                {{bien.nom}}
+            <div class="bien-info">
+                <div class="bien-nom">
+                    {{bien.nom}}
+                </div>
+                <div class="bien-meta">
+                    <span class="opaque">{{bien.ville}}</span>
+                    <div>
+                        <span class="material-icons">person</span>
+                        <span class="opaque">{{bien.nb_personne}}</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

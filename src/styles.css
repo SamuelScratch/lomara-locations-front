@@ -110,6 +110,10 @@ main {
     flex-direction: column;
 }
 
+h2 {
+    font-size: 2.5em;
+    font-family: 'Merriweather Sans';
+}
 
 article {
     width: 1200px;
