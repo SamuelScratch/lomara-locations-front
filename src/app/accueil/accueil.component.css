@@ -35,7 +35,88 @@ article {
     margin: 50px auto;
     text-align: justify;
 }
+.colonne-accueil {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    margin: 25px auto;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+.bouton {
+    text-align: center;
+    cursor: pointer;
+    border: solid 2px;
+    border-color: var(--dark-medium);
+    color: var(--dark-medium);
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+.bouton:hover {
+    background-color: rgb(177, 177, 177);
+    border-color: rgb(177, 177, 177);
+    color: var(--body-background-2);
+}
+.div-bouton{
+    display: flex;
+    justify-content: center;
+    align-self: end;
+}
 
+.divider {
+    border-top: solid 1px var(--ultra-dark);
+}
+.aligner-gauche {
+    margin-left: 50px;
+}
+.aligner-droite {
+    margin-right: 50px;
+}
+.colonne-accueil-large {
+    position: relative;
+    width: svw;
+    height: 300px;
+    color: black;
+    background-color: #ffe3ba;
+    gap: 20px;
+    padding: 20px;
+    margin: 25px auto;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+}
+.colonne-accueil-large img {
+    width: 200px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 400px);
+    border: solid 10px var(--body-background-2);
+    border-radius: 36% 64% 66% 34% / 48% 40% 60% 52%   ;
+}
+.colonne-accueil-large .texte {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    left: calc(50% - 120px);
+}
+.colonne-accueil-large .texte > * {
+    position: relative;
+}
+.colonne-accueil-large h3 {
+    font-family: "Zeyada";
+    font-size: 2rem;
+    margin-left: 20px;
+}
+.colonne-accueil-large .splitter {
+    position: absolute;
+    left: calc(50% - 150px);
+    height: calc(100% - 40px);
+    border-left: solid 1px black;
+}
 /* TABLET */
 
 @media only screen and (max-width: 1200px) {
@@ -51,6 +132,21 @@ article {
     article {
         width: 750px;
     }
+    .aligner-gauche {
+        margin: 20px auto;
+    }
+    .aligner-droite {
+        margin: 20px auto;
+    }
+    .colonne-accueil-large img {
+        left: calc(50% - 300px);
+    }
+    .colonne-accueil-large .texte {
+        left: calc(50% - 20px);
+    }
+    .colonne-accueil-large .splitter {
+        left: calc(50% - 50px);
+    }
 }
 
 /* PHONES */
@@ -64,5 +160,34 @@ article {
     }
     article {
         width: 80%;
+    }
+    .colonne-accueil {
+        width: 95%;
+    }
+    .colonne-accueil-large {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .colonne-accueil-large img {
+        position: relative;
+        top: unset;
+        left: unset;
+        margin: auto;
+    }
+    .colonne-accueil-large .texte {
+        position: relative;
+        left: unset;
+        margin: auto;
+    }
+    .colonne-accueil-large .splitter {
+        position: relative;
+        left: unset;
+        margin: auto;
+        border-left: none;
+        border-bottom: solid 1px black;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
     }
 }
