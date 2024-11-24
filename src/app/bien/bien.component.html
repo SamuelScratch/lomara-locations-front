@@ -21,8 +21,15 @@
             </div>
         </div>
     </div>
+    <div class="modale-images">
+        <span class="material-icons" (click)="IndexImageMinus()" style="position: absolute; left: 0; height: 100%;">chevron_left</span>
+        <div class="modale-images-image">
+            <img src={{bien.images[selectedImageIndex].data_image}} alt="">
+        </div>
+        <span class="material-icons" (click)="IndexImagePlus()" style="position: absolute; right: 0; height: 100%;">chevron_right</span>
+    </div>
     <div class="bien-images">
-        <img *ngFor="let image of bien.images" src={{image.data_image}} alt="IMAGE BIEN">
+        <img *ngFor="let image of bien.images" id="image-{{bien.images.indexOf(image)}}" (click)="displayModale = true ; selectedImageIndex = bien.images.indexOf(image)" src={{image.data_image}} alt="IMAGE BIEN">
     </div>
     <div class="equipement">
         <h3>Equipements :</h3>
@@ -30,4 +37,5 @@
             <li *ngFor="let equipement of bien.equipements">{{equipement.nom}}</li>
         </ul>
     </div>
+
 </article>

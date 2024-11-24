@@ -28,12 +28,14 @@ header h1 {
     margin: 0;
     font-family: 'Merriweather Sans';
 }
+
 h2 {
     text-align: center;
     font-family: 'Merienda';
     padding: 20px;
     backdrop-filter: blur(5px);
 }
+
 h3 {
     text-align: center;
     font-family: 'Merienda';
@@ -42,6 +44,7 @@ h3 {
     backdrop-filter: blur(5px);
     margin-bottom: 10px;
 }
+
 article {
     width: 1000px;
     margin-bottom: 50px;
@@ -49,6 +52,7 @@ article {
     flex-direction: column;
     gap: 20px;
 }
+
 .bien-head {
     background-color: white;
     border-radius: 5px;
@@ -57,10 +61,12 @@ article {
     background-position: bottom;
     background-repeat: no-repeat;
 }
+
 .description {
     display: flex;
     gap: 20px;
 }
+
 .equipement {
     display: flex;
     flex-direction: column;
@@ -69,49 +75,97 @@ article {
     border-radius: 5px;
     box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.15);
     color: black;
-    padding:  20px;
+    padding: 20px;
 }
+
 .bien-image {
     width: 250px;
 }
+
 .description-vignette-tarif {
     display: flex;
     flex-direction: column;
     padding: 10px;
     font-size: 0.9rem;
 }
-.description-texte{
-    padding:  20px;
+
+.description-texte {
+    padding: 20px;
 }
+
 .description-tarif {
     padding: 10px;
 }
-.description > div {
+
+.description>div {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.15);
     color: black;
     display: flex;
 }
+
 .description img {
     margin: 0 auto;
 }
+
 .bien-images {
-    column-count: 3;
-    column-gap: 5px;
+    display: flex;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.15);
     padding: 20px;
+    gap: 10px;
+    overflow: scroll;
 }
+
 .bien-images img {
-    width: 100%;
+    height: 200px;
+    cursor: pointer;
 }
+
 .bien-equipements {
     column-count: 3;
 }
-.bien-equipements > li{
+
+.bien-equipements>li {
     text-align: center;
+}
+
+.modale-images {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 100;
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.15);
+}
+
+.modale-images .modale-images-image {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.modale-images .modale-images-image img {
+    max-width: 700px;
+    height: 500px;
+    object-fit: contain;
+}
+.modale-images > span {
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+    padding: 5px;
+    z-index: 50;
 }
 
 /* TABLET */
@@ -120,26 +174,41 @@ article {
     article {
         width: 700px;
     }
+
+    .modale-images .modale-images-image img {
+        max-width: 550px;
+        height: 500px;
+        object-fit: contain;
+    }
 }
 
 /* PHONES */
 
-@media only screen and (max-width: 800px) { 
+@media only screen and (max-width: 800px) {
     article {
         width: 95%;
     }
+
     .bien-images {
         column-count: 2;
         column-gap: 5px;
     }
+
     h2 {
         font-size: 1.5rem;
     }
+
     .description {
         flex-direction: column;
     }
+
     .description img {
         margin: 0 auto;
-        max-width:  200px;
+        max-width: 200px;
+    }
+    .modale-images .modale-images-image img {
+        max-width: 100%;
+        height: 500px;
+        object-fit: contain;
     }
 }

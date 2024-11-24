@@ -13,6 +13,8 @@ export class BienComponent {
   isLoaded:boolean = false;
   bien : Bien= new Bien();
   id : number = 0;
+  selectedImageIndex : number = 0;
+  displayModale : boolean = false;
 
   constructor(private bienService : BienService, public router : ActivatedRoute) { }
 
@@ -27,4 +29,23 @@ export class BienComponent {
       }
     )
   }
+
+  public IndexImagePlus() {
+    this.selectedImageIndex += 1;
+    if (this.selectedImageIndex >= this.bien.images.length) {
+      this.selectedImageIndex = 0;
+    }
+    this.Scroll(document.getElementById('image-' + this.selectedImageIndex.toString()) as HTMLElement);
+  }
+
+  public IndexImageMinus() {
+    this.selectedImageIndex -= 1;
+    if (this.selectedImageIndex < 0) {
+      this.selectedImageIndex = this.bien.images.length - 1;
+    }
+    this.Scroll(document.getElementById('image-' + this.selectedImageIndex.toString()) as HTMLElement);
+  }
+  public Scroll(el: HTMLElement) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+}
 }

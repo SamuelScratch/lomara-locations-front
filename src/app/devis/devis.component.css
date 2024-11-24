@@ -32,20 +32,26 @@ header h1 {
 article {
     width: 800px;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 section {
-    border-radius: 20px;
     margin: auto;
-    background: white;
     width: 320px;
-    height: 320px;
-    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.15);
+    height: auto;
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
-    display: flex;
+}
+
+.carte-visite {
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.15);
     overflow: hidden;
+    width: 700px;
+    height: auto;
 }
 
 section>div {
@@ -66,6 +72,9 @@ section a {
 @media only screen and (max-width: 1200px) {
     article {
         width: 700px;
+    }
+    .carte-visite {
+        width: 500px;
     }
 }
 

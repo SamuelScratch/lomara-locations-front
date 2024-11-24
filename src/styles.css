@@ -64,7 +64,8 @@ input[type="submit"], button {
 
 /***************/
 :root {
-    --body-background: #f5f2e7;
+    /*--body-background: #f5f2e7;*/
+    --body-background: white;
     --body-background-2: #faf5f0;
     --navbar : #1d7cca;
     /*--ultra-dark: #09192e;
