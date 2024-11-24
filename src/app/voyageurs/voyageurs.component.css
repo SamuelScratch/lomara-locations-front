@@ -36,6 +36,22 @@ header h1 {
     gap: 20px;
     justify-content: center;
 }
+.intro {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.intro a {
+    text-decoration: underline;
+    color: var(--dark-medium);
+}
+.intro::before{
+    content: "•\00a0\00a0";
+}
+.intro::after{
+    content: "\00a0\00a0•";
+}
 
 .carte-bien {
     background-color: white;

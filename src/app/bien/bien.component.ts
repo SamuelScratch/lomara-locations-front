@@ -17,7 +17,7 @@ export class BienComponent {
   constructor(private bienService : BienService, public router : ActivatedRoute) { }
 
   ngOnInit(): void {
-
+    window.scrollTo(0, 0)
     const bienId = parseInt(this.router.snapshot.paramMap.get('id')!);
 
     this.bienService.getBien(bienId).subscribe(

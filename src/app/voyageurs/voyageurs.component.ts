@@ -10,13 +10,14 @@ import { Bien } from '../bien';
 })
 export class VoyageursComponent implements OnInit {
 
-  isLoaded:boolean = false;
-  biens : Bien[] = [];
+  isLoaded: boolean = false;
+  biens: Bien[] = [];
 
-  
-  constructor(private bienService : BienService, public router : Router) { }
+
+  constructor(private bienService: BienService, public router: Router) { }
 
   ngOnInit(): void {
+    window.scrollTo(0, 0)
     this.bienService.getBiens().subscribe(
       response => {
         this.biens = response;

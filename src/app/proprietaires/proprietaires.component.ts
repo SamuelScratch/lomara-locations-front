@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ProprietairesComponent {
 
+  ngOnInit(): void {
+    window.scrollTo(0, 0)
+  }
 }

@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AccueilComponent {
 
+  ngOnInit(): void {
+    window.scrollTo(0, 0)
+  }
 }

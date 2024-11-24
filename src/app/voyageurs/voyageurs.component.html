@@ -7,6 +7,9 @@
 </header>
 
 <article>
+    <div class="intro">
+        Locations disponibles chez <span class="lomara">LoMaRa</span>
+    </div>
     <div class="biens">
         <div class="carte-bien" *ngFor="let bien of biens"  routerLink="/bien/{{bien.id}}">
             <img src={{bien.vignette}} alt="IMAGE BIEN" class="bien-image">
