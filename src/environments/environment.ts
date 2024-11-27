@@ -1,5 +1,5 @@
 
 export const environment = {
-    production: false,
-    apiUrl: "http://localhost"
+    production: true,
+    apiUrl: "https://lomara-locations.fr"
   };
