@@ -143,6 +143,8 @@ article {
         left: calc(50% - 300px);
     }
     .colonne-accueil-large .texte {
+        width: auto;
+        text-align: justify;
         left: calc(50% - 20px);
     }
     .colonne-accueil-large .splitter {
@@ -162,8 +164,18 @@ article {
     article {
         width: 80%;
     }
+    article h3 {
+        font-size: 1.25rem;
+    }
+    .aligner-gauche {
+        margin-left: 0;
+    }
+    .aligner-droite {
+        margin-right: 0;
+    }
     .colonne-accueil {
-        width: 95%;
+        margin: 20px auto;
+        width: auto;
     }
     .colonne-accueil-large {
         display: flex;
