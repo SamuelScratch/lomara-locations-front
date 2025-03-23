@@ -129,7 +129,7 @@ article {
 }
 
 .bien-equipements>li {
-    text-align: center;
+    text-align: left;
 }
 
 .modale-images {
@@ -167,6 +167,9 @@ article {
     padding: 5px;
     z-index: 50;
 }
+.material-symbols-outlined{
+    color: grey;
+}
 
 /* TABLET */
 
@@ -192,6 +195,9 @@ article {
     .bien-images {
         column-count: 2;
         column-gap: 5px;
+    }
+    .bien-equipements {
+        column-count: 1;
     }
 
     h2 {

@@ -34,7 +34,7 @@
     <div class="equipement">
         <h3>Equipements :</h3>
         <ul class="bien-equipements">
-            <li *ngFor="let equipement of bien.equipements">{{equipement.nom}}</li>
+            <li *ngFor="let equipement of bien.equipements"><span class="material-symbols-outlined">{{equipement.icone}}</span> {{equipement.nom}}</li>
         </ul>
     </div>
 

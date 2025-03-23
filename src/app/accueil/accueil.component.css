@@ -24,6 +24,7 @@ header h1 {
     font-size: 4em;
     margin: 0;
     font-family: 'AdlerySwash';
+    color: var(--alternative-color);
 }
 header p {
     font-family: 'Merriweather Sans';

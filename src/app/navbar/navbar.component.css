@@ -73,7 +73,7 @@ span {
     }
     .nav-item:hover {
         background-color: var(--medium);
-        color: var(--body-background-2);
+        color: var(--alternative-color);
         transform: scale(1);
     }
     .nav-item::before{

@@ -144,6 +144,41 @@ span.lomara::before, span.lomara::after{
     content: "\00a0";
 }
 
+/******* COMPOSANTS *******/
+
+.bouton-contact {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    cursor: pointer;
+    border: solid 2px;
+    border-color: var(--dark-medium);
+    color: var(--dark-medium);
+    padding: 10px 20px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+}
+.bouton-contact span {
+    vertical-align: bottom;
+}
+.bouton-contact:hover {
+    background-color: var(--dark-medium);
+    border-color: var(--dark-medium);
+    color: var(--body-background-2);
+}
+.div-bouton-contact{
+    display: flex;
+    justify-content: center;
+}
+
+.material-icons, .material-symbols-outlined {
+    font-size: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+}
+
 /* TABLET */
 
 @media only screen and (max-width: 1200px) {

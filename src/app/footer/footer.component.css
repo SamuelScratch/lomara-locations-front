@@ -31,6 +31,9 @@ footer > svg {
     text-align: center;
     color: var(--alternative-color);
 }
+a {
+    text-decoration: underline;
+}
 
 /* TABLET */
 
@@ -46,6 +49,12 @@ footer > svg {
     footer {
         padding: 75px 20px;
         font-size: 0.85rem;
+        flex-direction: column;
+        justify-content: left;
+        gap: 20px;
+    }
+    footer > * {
+        text-align: left;
     }
     .material-icons, .material-symbols-outlined {
         /*text-align: right;*/

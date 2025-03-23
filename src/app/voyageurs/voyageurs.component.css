@@ -11,6 +11,10 @@ header {
     color: whitesmoke;
 }
 
+article {
+    margin-bottom: 50px;
+}
+
 header>div {
     width: 100%;
     height: 100%;
