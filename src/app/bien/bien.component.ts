@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BienService } from '../bien.service';
-import { Bien } from '../bien';
+import { Bien, Image } from '../bien';
+import { Pipe, PipeTransform } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl, SafeUrl} from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-bien',
@@ -14,9 +17,11 @@ export class BienComponent {
   bien : Bien= new Bien();
   id : number = 0;
   selectedImageIndex : number = 0;
+  untrustedUrl : SafeResourceUrl = "";
+  trustedUrl : SafeResourceUrl = '';
   displayModale : boolean = false;
 
-  constructor(private bienService : BienService, public router : ActivatedRoute) { }
+  constructor(private bienService : BienService, public router : ActivatedRoute, private sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
     window.scrollTo(0, 0)
@@ -25,6 +30,8 @@ export class BienComponent {
     this.bienService.getBien(bienId).subscribe(
       response => {
         this.bien = response;
+        this.untrustedUrl = this.bien.calendrier;
+        this.trustedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.bien.calendrier);
         this.isLoaded = true;
       }
     )

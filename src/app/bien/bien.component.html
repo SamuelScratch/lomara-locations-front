@@ -15,27 +15,30 @@
             {{bien.description}}
         </div>
         <div class="description-vignette-tarif">
-            <img src={{bien.vignette}} alt="IMAGE BIEN" class="bien-image">
+            <img src={{bien.vignette}} class="bien-image">
             <div class="description-tarif">
                 {{bien.texte_tarif}}
             </div>
         </div>
     </div>
-    <div class="modale-images">
+    <div class="modale-images" *ngIf="bien.images.length > 0">
         <span class="material-icons" (click)="IndexImageMinus()" style="position: absolute; left: 0; height: 100%;">chevron_left</span>
         <div class="modale-images-image">
             <img src={{bien.images[selectedImageIndex].data_image}} alt="">
         </div>
         <span class="material-icons" (click)="IndexImagePlus()" style="position: absolute; right: 0; height: 100%;">chevron_right</span>
     </div>
-    <div class="bien-images">
-        <img *ngFor="let image of bien.images" id="image-{{bien.images.indexOf(image)}}" (click)="displayModale = true ; selectedImageIndex = bien.images.indexOf(image)" src={{image.data_image}} alt="IMAGE BIEN">
+    <div class="bien-images" *ngIf="bien.images.length > 0">
+        <img *ngFor="let image of bien.images" id="image-{{bien.images.indexOf(image)}}" (click)="displayModale = true ; selectedImageIndex = bien.images.indexOf(image)" src={{image.data_image}}>
     </div>
-    <div class="equipement">
+    <div class="equipement" *ngIf="bien.equipements.length > 0">
         <h3>Equipements :</h3>
         <ul class="bien-equipements">
             <li *ngFor="let equipement of bien.equipements"><span class="material-symbols-outlined">{{equipement.icone}}</span> {{equipement.nom}}</li>
         </ul>
     </div>
-
+    <div class="calendrier" *ngIf="bien.calendrier != null">
+        <iframe [src]="trustedUrl" style="border: 0; margin: auto 0;"
+        frameborder="" scrolling="no"></iframe>
+    </div>
 </article>

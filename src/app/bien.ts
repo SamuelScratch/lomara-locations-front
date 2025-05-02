@@ -7,10 +7,12 @@ export class Bien {
     description! : string;
     texte_tarif! : string;
     vignette! : string;
+    calendrier! : string;
     nb_personne! : number;
-    images! : Image[];
-    equipements! : Equipement[];
+    images! : Array<Image>;
+    equipements! : Array<Equipement>;
 }
+
 export class Image {
     id! : number;
     data_image! : string;

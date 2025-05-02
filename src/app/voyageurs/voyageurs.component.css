@@ -40,20 +40,24 @@ header h1 {
     gap: 20px;
     justify-content: center;
 }
+
 .intro {
     text-align: center;
     font-size: 1.25rem;
     font-weight: 500;
     margin-bottom: 50px;
 }
+
 .intro a {
     text-decoration: underline;
     color: var(--dark-medium);
 }
-.intro::before{
+
+.intro::before {
     content: "•\00a0\00a0";
 }
-.intro::after{
+
+.intro::after {
     content: "\00a0\00a0•";
 }
 
@@ -68,9 +72,11 @@ header h1 {
     cursor: pointer;
     transition: 0.3s;
 }
+
 .carte-bien:hover {
     transform: scale(1.05);
 }
+
 .carte-bien .material-icons {
     color: grey;
     font-size: 1.25rem;
@@ -81,9 +87,9 @@ header h1 {
 }
 
 .bien-image {
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
 }
 
 .bien-info {
@@ -96,6 +102,27 @@ header h1 {
 .bien-meta {
     display: flex;
     justify-content: space-between;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid var(--dark-medium);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* TABLET */

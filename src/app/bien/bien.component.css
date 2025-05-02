@@ -170,6 +170,16 @@ article {
 .material-symbols-outlined{
     color: grey;
 }
+.calendrier {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.calendrier iframe{
+    width: 800px;
+    height: 700px;
+}
+
 
 /* TABLET */
 
@@ -182,6 +192,10 @@ article {
         max-width: 550px;
         height: 500px;
         object-fit: contain;
+    }
+    .calendrier iframe{
+        width: 700px;
+        height: 600px;
     }
 }
 
@@ -216,5 +230,9 @@ article {
         max-width: 100%;
         height: 500px;
         object-fit: contain;
+    }
+    .calendrier iframe{
+        width: 300px;
+        height: 300px;
     }
 }
